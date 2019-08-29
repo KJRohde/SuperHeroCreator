@@ -15,14 +15,14 @@ namespace SuperHeroCreator.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "This application allows user to add, update, or delete information about heroes in their community.\nIf there is a new hero, please 'Create' a hero.\nIf a hero has new information, please 'Update' that hero.\nIf a hero has left the community or has been defeated by a villain, please 'Delete' that hero.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "For more information regarding our heroes, please contact us.";
 
             return View();
         }

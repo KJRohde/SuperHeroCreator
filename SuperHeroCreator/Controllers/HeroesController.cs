@@ -17,7 +17,12 @@ namespace SuperHeroCreator.Controllers
         // GET: Heroes
         public ActionResult Index()
         {
-            return View(context);
+            List<SuperHero> model = new List<SuperHero>();
+            foreach (var x in context.Heroes)
+            {
+                model.Add(x);
+            }
+            return View(model);
         }
 
         // GET: Heroes/Details/5
@@ -47,7 +52,7 @@ namespace SuperHeroCreator.Controllers
             }
             catch
             {
-                return View(context);
+                return View("Index");
             }
         }
 
