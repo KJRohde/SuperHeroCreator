@@ -60,7 +60,7 @@ namespace SuperHeroCreator.Controllers
         public ActionResult Edit(int id)
         {
             SuperHero heroToEdit = context.Heroes.FirstOrDefault(h => h.Id == id);
-            return View(context);
+            return View(heroToEdit);
         }
 
         // POST: Heroes/Edit/5

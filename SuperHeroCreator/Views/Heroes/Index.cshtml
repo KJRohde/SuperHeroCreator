@@ -12,6 +12,9 @@
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
         <th>
@@ -30,27 +33,30 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AlterEgo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PrimarySuperPower)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AlternatePower)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CatchPhrase)
-        </td>
-        <td>
-            @Html.ActionLink("Update", "Update", "Heroes") ||
-            @Html.ActionLink("Delete", "Delete", "Heroes")
-        </td>
-    </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.AlterEgo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.PrimarySuperPower)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.AlternatePower)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CatchPhrase)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) ||
+        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+    </td>
+</tr>
 }
 
 </table>
