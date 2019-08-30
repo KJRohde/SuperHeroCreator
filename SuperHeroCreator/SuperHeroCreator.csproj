@@ -247,6 +247,7 @@
     <Content Include="Views\Heroes\Edit.cshtml" />
     <Content Include="Views\Heroes\Delete.cshtml" />
     <Content Include="Views\Heroes\Index.cshtml" />
+    <Content Include="Views\Heroes\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
