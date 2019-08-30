@@ -1,0 +1,14 @@
+﻿body
+{
+    background-image: url(deadpool.jpg);
+    background-size : 100%
+}
+table, th, td
+{
+    background-color: floralwhite;
+    border: 2px
+}
+h3 
+{
+    background-color: floralwhite;
+}
